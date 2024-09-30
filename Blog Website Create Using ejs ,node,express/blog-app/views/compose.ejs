@@ -1,0 +1,19 @@
+<!-- views/compose.ejs -->
+<%- include("partials/header"); %>
+
+<div class="container">
+  <h1>Compose a New Post</h1>
+  <form action="/compose" method="POST">
+    <div class="form-group">
+      <label for="postTitle">Title</label>
+      <input type="text" id="postTitle" name="postTitle" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="postBody">Content</label>
+      <textarea id="postBody" name="postBody" class="form-control" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn">Publish</button>
+  </form>
+</div>
+
+<%- include("partials/footer"); %>
