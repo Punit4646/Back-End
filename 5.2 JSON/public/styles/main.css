@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #e26e5c;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(3) rotate(130)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M20-5V5m0 30v10m20-30v10M0 15v10'  stroke-linejoin='round' stroke-linecap='round' stroke-width='8.5' stroke='hsla(47,80.9%,61%,1)' fill='none'/><path d='M-5 40H5M-5 0H5m30 0h10M35 40h10M15 20h10'  stroke-linejoin='round' stroke-linecap='round' stroke-width='8.5' stroke='hsla(4.1,89.6%,58.4%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  text-align: center;
+}
+
+
+h1 {
+  display: inline;
+  font-size: 5rem;
+  text-align: center;
+  color: #e26e5c;
+  background-color: white;
+}
+
+h2 {
+  color: #e26e5c;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+button {
+  font-size: 5rem;
+}
+
+.buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#recipeContainer {
+  background-color: white;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#recipeTitle {
+  color: #e26e5c;
+}
+
+#ingredientsList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#ingredientsList li {
+  margin-bottom: 10px;
+  color: #555;
+}
